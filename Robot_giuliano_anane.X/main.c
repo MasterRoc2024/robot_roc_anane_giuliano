@@ -3,6 +3,8 @@
 #include <xc.h>
 #include "ChipConfig.h"
 #include "IO.h"
+#include "timer.h"
+#include "PWM.h"
 
 int main(void) {
     /***************************************************************************************************/
@@ -13,6 +15,12 @@ int main(void) {
     // Configuration des éentres sorties
     /****************************************************************************************************/
     InitIO();
+    InitTimer23();
+    InitTimer1();
+    InitPWM();
+    
+    PWMSetSpeed(20);
+    
     LED_BLANCHE = 1;
     LED_BLEUE = 1;
     LED_ORANGE = 1;
@@ -20,8 +28,5 @@ int main(void) {
     // Boucle Principale
     /****************************************************************************************************/
     while (1) {
-        LED_BLANCHE = !LED_BLANCHE ;
-    LED_BLEUE = !LED_BLEUE;
-    LED_ORANGE = !LED_ORANGE;
     } // fin main
 }
