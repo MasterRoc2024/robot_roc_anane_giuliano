@@ -8,8 +8,10 @@
             <file>file:/C:/GitHub/robot_roc_anane_giuliano/Robot_giuliano_anane.X/main.c</file>
             <file>file:/C:/GitHub/robot_roc_anane_giuliano/Robot_giuliano_anane.X/pwm.c</file>
             <file>file:/C:/GitHub/robot_roc_anane_giuliano/Robot_giuliano_anane.X/Robot.c</file>
+            <file>file:/C:/GitHub/robot_roc_anane_giuliano/Robot_giuliano_anane.X/IO.c</file>
             <file>file:/C:/GitHub/robot_roc_anane_giuliano/Robot_giuliano_anane.X/timer.c</file>
             <file>file:/C:/GitHub/robot_roc_anane_giuliano/Robot_giuliano_anane.X/Robot.h</file>
+            <file>file:/C:/GitHub/robot_roc_anane_giuliano/Robot_giuliano_anane.X/pwm.h</file>
         </group>
     </open-files>
 </project-private>
