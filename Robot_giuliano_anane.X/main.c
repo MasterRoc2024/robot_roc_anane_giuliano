@@ -7,6 +7,8 @@
 #include "PWM.h"
 #include "ADC.h"
 #include "Robot.h"
+#include "UART.h"
+#include "CB_TX1.h"
 //int ADCValue0;
 //int ADCValue1;
 //int ADCValue2;
@@ -24,13 +26,15 @@ int main(void) {
     InitTimer1();
     InitPWM();
     InitADC1();
-      
+    InitUART(); 
     
 
     /****************************************************************************************************/
     // Boucle Principale
     /****************************************************************************************************/
     while (1) {
+        SendMessageDirect((unsigned char*) "Bonjour", 7);
+        //__delay32(40000000);
         if (ADCIsConversionFinished() == 1)
         {
             ADCClearConversionFinishedFlag();
