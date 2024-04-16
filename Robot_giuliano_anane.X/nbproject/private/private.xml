@@ -3,20 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/GitHub/robot_roc_anane_giuliano/Robot_giuliano_anane.X/main.c</file>
-            <file>file:/C:/GitHub/robot_roc_anane_giuliano/Robot_giuliano_anane.X/pwm.c</file>
-            <file>file:/C:/GitHub/robot_roc_anane_giuliano/Robot_giuliano_anane.X/Robot.c</file>
-            <file>file:/C:/GitHub/robot_roc_anane_giuliano/Robot_giuliano_anane.X/timer.c</file>
-            <file>file:/C:/GitHub/robot_roc_anane_giuliano/Robot_giuliano_anane.X/IO.h</file>
-            <file>file:/C:/GitHub/robot_roc_anane_giuliano/Robot_giuliano_anane.X/timer.h</file>
-            <file>file:/C:/GitHub/robot_roc_anane_giuliano/Robot_giuliano_anane.X/Robot.h</file>
-            <file>file:/C:/GitHub/robot_roc_anane_giuliano/Robot_giuliano_anane.X/IO.c</file>
-            <file>file:/C:/GitHub/robot_roc_anane_giuliano/Robot_giuliano_anane.X/pwm.h</file>
-            <file>file:/C:/GitHub/robot_roc_anane_giuliano/Robot_giuliano_anane.X/ChipConfig.h</file>
-            <file>file:/C:/GitHub/robot_roc_anane_giuliano/Robot_giuliano_anane.X/ADC.c</file>
-            <file>file:/C:/GitHub/robot_roc_anane_giuliano/Robot_giuliano_anane.X/ADC.h</file>
             <file>file:/C:/GitHub/robot_roc_anane_giuliano/Robot_giuliano_anane.X/ChipConfig.c</file>
+            <file>file:/C:/GitHub/robot_roc_anane_giuliano/Robot_giuliano_anane.X/ADC.h</file>
+            <file>file:/C:/GitHub/robot_roc_anane_giuliano/Robot_giuliano_anane.X/main.c</file>
+            <file>file:/C:/GitHub/robot_roc_anane_giuliano/Robot_giuliano_anane.X/ADC.c</file>
             <file>file:/C:/GitHub/robot_roc_anane_giuliano/Robot_giuliano_anane.X/toolbox.c</file>
+            <file>file:/C:/GitHub/robot_roc_anane_giuliano/Robot_giuliano_anane.X/UART.h</file>
+            <file>file:/C:/GitHub/robot_roc_anane_giuliano/Robot_giuliano_anane.X/IO.c</file>
+            <file>file:/C:/GitHub/robot_roc_anane_giuliano/Robot_giuliano_anane.X/Makefile</file>
         </group>
     </open-files>
 </project-private>

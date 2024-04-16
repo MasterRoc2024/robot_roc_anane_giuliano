@@ -10,7 +10,7 @@ unsigned char isTransmitting = 0;
 void SendMessage(unsigned char* message, int length)
 {
     unsigned char i=0;
-    if(CB_TX1_RemainingSize()>length)
+    if (CB_TX1_GetRemainingSize()>length)
     {
         //On peut écrire le message
         for(i=0;i<length;i++)
@@ -30,7 +30,7 @@ void CB_TX1_Add(unsigned char value)
 }
 unsigned char CB_TX1_Get(void)
 {
-    unsigned char value=cbTx1Buffer[cbTxHead];
+    unsigned char value=cbTx1Buffer[cbTx1Head];
     cbTx1Head++;
     if(cbTx1Head>=CBTX1_BUFFER_SIZE)
         cbTx1Head=0;
@@ -52,19 +52,16 @@ void SendOne()
 }
 unsigned char CB_TX1_IsTranmitting(void)
 {
-...
+    return isTransmitting;
 }
 int CB_TX1_GetDataSize(void)
 {
-    //return size of data stored in circular buffer
-    int dataSize;
-    ...
-    return dataSize;
+    if(cbTx1Head>=cbTx1Tail)
+        return cbTx1Head-cbTx1Tail;
+    else
+        return CBTX1_BUFFER_SIZE - (cbTx1Tail-cbTx1Head);
 }
 int CB_TX1_GetRemainingSize(void)
 {
-    //return size of remaining size in circular buffer
-    int remainingSize;
-    ...
-    return remainingSize;
+    return CBTX1_BUFFER_SIZE- CB_TX1_GetDataSize();
 }
